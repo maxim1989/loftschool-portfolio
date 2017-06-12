@@ -1,0 +1,47 @@
+@charset "UTF-8";
+$icons: 'fb', 'vk', 'tw';
+
+.foot {
+	height: 50px;
+	background: #414141;
+	margin-top: -50px;
+}
+
+.creator {
+	color: #9c9c9c;
+	line-height: 50px;
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: FiraSansLight, sans-serif;
+	font-size: 14px;
+}
+
+.accounts {
+	display: inline-block;
+	vertical-align: middle;
+	width: 49.5%;
+	text-align: right;
+}
+
+.soc {
+	font-size: 0;
+}
+
+.soc__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@each $icon in $icons {
+	.soc__link_#{$icon} {
+		background-image: url('../img/icons/#{$icon}_grey.png');
+		background-repeat: no-repeat;
+		margin-left: 7px;
+		@extend %soc_link;
+	}
+
+	.soc__link_#{$icon}:hover {
+		background-image: url('../img/icons/#{$icon}.png');
+	}
+}

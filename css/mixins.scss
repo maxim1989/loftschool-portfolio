@@ -1,0 +1,37 @@
+%clearfix {
+    &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+%soc_link {
+	display: block;
+	width: 31px;
+	height: 31px;
+}
+
+@mixin vertical-line_before($min-height, $pseudo-color, $left-pos) {
+	content: '';
+	min-height: $min-height;
+	position: absolute;
+	background-color: $pseudo-color;
+	width: 1px;
+	display: block;			
+	top: -6%;
+	left: $left-pos;
+	z-index: 1;
+}
+
+@mixin vertical-line_after($min-height, $pseudo-color, $left-pos) {
+	content: '';
+	min-height: $min-height;
+	position: absolute;
+	background-color: $pseudo-color;
+	width: 1px;
+	display: block;
+	bottom: -12%;
+	left: $left-pos;
+	z-index: 1;
+}

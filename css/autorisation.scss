@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+body {
+	background: url("../img/background/background_fill_1.jpg") repeat;
+}
+
+.wrapper__auth {
+	text-align: center;
+	&::after {
+		content: '';
+		height: 0;
+		display: none;
+	}
+	&::before {
+	    content: "";
+	    display: inline-block;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.auth {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@keyframes appear_auth__avatar {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes appear_auth__btns {
+	0% {
+		top: 10000px;
+    	position: relative;
+		opacity: 0;
+	}
+
+	25% {
+		top: 100px;
+		position: relative;
+		opacity: 0.25;
+	}
+
+	50% {
+		top: 50px;
+		position: relative;
+		opacity: 0.5;
+	}
+
+	75% {
+		top: 75px;
+		position: relative;
+		opacity: 0.75;
+	}
+
+	100% {
+		top: 0;
+		position: static;
+		opacity: 1;
+	}
+}
+
+.auth__avatar {
+	animation-name: appear_auth__avatar;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-duration: 3s;
+}
+
+.avatar {
+	margin: 0;
+	text-align: center;
+	background-image: linear-gradient(to top, #fff 70%, transparent 30%);
+}
+
+.avatar__pic {
+	border-width: 1px;
+    border-radius: 50%;
+    border-color: rgb(215, 215, 215);
+    border-style: solid;
+    width: 140px;
+  	height: 140px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.signature {
+	margin-top: 14px;
+    padding-bottom: 11px;
+}
+
+.signature__p {
+	font-family: FiraSansRegular;
+}
+
+.signature__p_name {
+	margin-top: 0;
+	font-size: 23px;
+	margin-bottom: 0;
+}
+
+.signature__p_surname {
+	margin-top: -5px;
+	margin-bottom: 0;
+	font-size: 23px;
+}
+
+.auth__btns {
+	animation-name: appear_auth__btns;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+	animation-duration: 3s;
+}
+
+.bbar {
+    width: 300px;
+    height: 76px;
+  	background-color: rgb(51, 193, 227);
+  	border-radius: 0px 0px 10px 10px;
+  	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  	margin: 0 auto;
+}
+
+.open-portfolio {
+  	border-width: 2px;
+	border-color: rgb(255, 255, 255);
+	border-style: solid;
+	width: 134px;
+  	height: 36px;
+	top: 25%;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 20px;
+	display: block;
+	color: rgb(255, 255, 255);
+
+	&:hover {
+		color: #33c1e3;
+		background-color: rgb(255, 255, 255);
+	}
+}
+
+.btn-text {
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: FiraSansBold;
+	-webkit-animation-delay: 3s;
+  	animation-delay: 3s;
+}

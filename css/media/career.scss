@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 992px) {
+	.career {
+	    margin-left: -5px;
+	    margin-top: -2px;
+	}
+
+	.office__pic {
+	    width: 228px;
+	    height: 228px;
+	}
+
+	.job {
+	    width: 49.777%;
+	}
+
+	.year {
+	    left: -19%;
+	}
+
+	.year::after {
+		top: -25%;
+    	right: -91%;
+	}
+	
+	$left-pos-career: -7.25%;
+
+	.job__item {
+		max-width: 84%;
+
+		&:hover {
+			.year {
+				top: 40%;
+				left: -22%;
+
+				&::after {
+					top: 10%;
+					right: -75%;
+				}
+			}
+		}
+
+		&::after {
+			left: $left-pos-career;
+		}
+
+		&::before {
+			left: $left-pos-career;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.career__bottom {
+	    margin-left: 0;
+	}
+
+	.office__photos {
+		float: none;
+		margin: 0 auto;
+		width: 228px;
+	}
+
+	.job {
+		float: none;
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.office__pic {
+	    width: 228px;
+	    height: 228px;
+	}
+
+	.year {
+		display: none;
+	}
+
+	.job__item {
+		max-width: 80%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			display: none;
+		}
+
+		&::before {
+			display: none;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.foot {
+	    margin-top: -71px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.office__photos {
+	    margin-top: -14px;
+	    width: 100%;
+	    max-width: 220px;
+	    height: auto;
+    }
+
+    .office__pic {
+	    width: auto;
+	    height: auto;
+	}
+
+	.job__item {
+		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+
+	.job__name {
+	    font-size: 17px;
+	    margin-bottom: 2px;
+	    overflow: hidden;
+    	text-overflow: ellipsis;
+	}
+
+	.job__position, .job__time {
+	    font-size: 16px;
+	    overflow: hidden;
+    	text-overflow: ellipsis;
+	}
+
+	.job__position {
+		margin-bottom: 6px;
+	}
+
+	.foot {
+		margin-top: -88px;
+	}
+}

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+$sidebar-width: 23%;
+$nav-color: #414141;
+$nav-active-color: #33c1e3;
+
+$main-width: 77%;
+$about-left-width: 41%;
+$about-right-width: 53%;
+
+.sidebar {
+	float: left;
+	width: $sidebar-width;
+}
+
+.nav {
+	font-family: FiraSansRegular, sans-serif;
+}
+
+.nav__list {
+	text-align: right;
+}
+
+.nav__item {
+	color: $nav-color; 
+	padding-top: 9px;
+	padding-bottom: 15px;
+	padding-right: 18px;
+	line-height: 15px;
+	font-size: 18px;
+	border-right: 6px solid transparent;
+
+	&:hover {
+		border-right: 6px solid transparent;
+	    color: $nav-active-color;
+	    font-weight: 400;
+	}
+}
+
+.nav__item_active {
+    border-right: 6px solid $nav-active-color;
+    color: $nav-active-color;
+    font-weight: 700;
+
+    &:hover {
+		border-right: 6px solid $nav-active-color;
+	    color: $nav-active-color;
+	    font-weight: 700;
+	}
+}
+
+.main {
+	float: right;
+	width: $main-width;
+	box-sizing: border-box;
+	padding-bottom: 20px;
+}
+
+.about {
+	@extend %clearfix;
+}
+
+.about__left {
+	float: left;
+	width: $about-left-width;
+	text-align: center;
+}
+
+.about__photo {
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: 3px;
+	margin-left: 57px;
+	vertical-align: middle;
+}
+
+.about__pic {
+	display: block;
+}
+
+.about__right {
+	float: right;
+	width: $about-right-width;
+}
+
+.title {
+	padding-left: 4px;
+	line-height: 40px;
+	font-size: 35px;
+	font-family: FiraSansRegular, sans-serif;
+	color: #414141;
+}
+
+.about__text {
+	margin-top: 15px;
+	padding-left: 4px;
+	line-height: 26px;
+	font-size: 18px;
+	height: 317px;
+	overflow: auto;
+	font-family: FiraSansLight, sans-serif;
+	color: #646464;
+}
+
+.paragraph-first,
+.paragraph {
+	margin-bottom: 10px;
+}
+
+.about__btns {
+	margin-top: 61px;
+	text-align: right;
+}
+
+.download-btn {
+	display: inline-block;
+	border-width: 2px;
+    border-color: rgb(232, 95, 97);
+    color: rgb(232, 95, 97);
+    border-style: solid;
+    width: 169px;
+    height: 36px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 36px;
+    font-family: FiraSansBold, sans-serif;
+    font-size: 14px;
+
+    &:hover {
+		background-color: rgb(232, 95, 97);
+		color: #fff;
+	}
+}

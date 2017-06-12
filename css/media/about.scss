@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 992px) {
+	.wrapper {
+		min-width: 750px;
+	}
+
+	.container {
+		max-width: 750px;
+		padding: 0px 20px;
+	}
+
+	// .header__right {
+		// margin-right: 20px;
+	// }
+
+	.sidebar {
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.nav__list {
+		text-align: left;
+	}
+
+	.nav__item_active {
+		border-right: 6px solid transparent;
+		&:hover {
+			border-right: 6px solid transparent;
+		}
+	}
+
+	.nav__item {
+		display: inline-block;
+		padding-top: 2px;
+		padding-right: 24px;
+		padding-left: 1px;
+	}
+
+	.main {
+		float: none;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.about__left {
+	    width: 31%;
+	}
+
+	.about__right {
+		margin-left: 12px;
+		width: 60%;
+	}
+
+	.about__photo {
+		margin-left: 0;
+	}
+
+	.about__pic {
+		
+		width: 166px;
+	}
+
+	.about__right {
+		float: left;
+	}
+
+	.about__btns {
+		margin-top: 102px;
+	}
+
+	.download-btn {
+		margin-right: 30px;
+	}
+
+	.accounts {
+		width: 46.5%;
+	}
+
+	.foot {
+		min-width: 750px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		// min-width: 480px;
+		min-width: 100%;
+		&::after {
+			height: 100px;
+		}
+	}
+
+	.container {
+		max-width: 480px;
+	}
+
+	// .header__right {
+	// 	margin-right: 0;
+	// }
+
+	.menu {
+		.contacts {
+			background: url('../img/dec/phone.png') no-repeat;
+		    text-indent: 9999px;
+		    display: inline-block;
+		    white-space: nowrap;
+		    width: 32px;
+		    height: 32px;
+		    margin-top: 25px;
+		    margin-right: -2px;
+		}
+
+	    &:hover {
+	    	.contacts {
+	    		background: url('../img/dec/phone-hover.png') no-repeat;
+	    	}
+
+			.triangel:after {
+				margin-left: 0;
+			}
+
+			.triangel:before {
+			    margin-left: 0;
+			}
+	    }
+	}
+
+	.contacts-combo {
+		right: 0;
+	}
+
+	.triangel {
+		right: 4%;
+	}
+
+	.about__left {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 17px;
+	}
+
+	.nav__list {
+		text-align: center;
+	}
+
+	.nav__item {
+	    border-right: 0px solid transparent;
+	    padding-right: 12px;
+    	padding-left: 12px;
+
+    	&:hover {
+			border-right: 0px solid transparent;
+		}
+	}
+
+	.nav__item_active {
+		border-right: 0px solid transparent;
+		&:hover {
+			border-right: 0px solid transparent;
+		}
+	}
+
+	.title {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.about__right {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.about__btns {
+		text-align: center;
+		margin-top: 72px;
+		// margin-bottom: 49px;
+	}
+
+	.download-btn {
+		margin-right: 7px;
+	}
+
+	.foot {
+		height: 100px;
+		margin-top: -59px;
+		// min-width: 480px;
+		min-width: 100%;
+	}
+
+	.creator,
+	.accounts {
+		display: block;
+		width: 100%;
+		height: 44px;
+		text-align: center;
+	}
+
+	.accounts {
+    	margin-left: -3px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.wrapper {
+		min-width: 95%;
+		&::after {
+			height: 100px;
+		}
+	}
+
+	.container {
+		max-width: 95%;
+		padding: 0;
+	}
+
+	.header {
+	    margin-bottom: 15px;
+	}
+
+	.header__left {
+		width: 180px;
+	}
+
+	// .header__right {
+	//     margin-right: 26px;
+	// }
+
+	.header__name {
+		font-size: 14px;
+    	width: 50%;
+	    line-height: 21px;
+	}
+
+	.sidebar {
+		min-width: 95%;
+	    margin-bottom: 9px;
+	}
+
+	.nav__item {
+		font-size: 14px;
+		border-right: 0px solid transparent;
+		padding-right: 8px;
+		padding-left: 8px;
+		// &:hover {
+			// border-right: 0px solid transparent;
+		// }
+	}
+
+	// .nav__item_active {
+		// border-right: 0px solid transparent;
+		// &:hover {
+			// border-right: 0px solid transparent;
+		// }
+	// }
+
+	.icon-user-secret,
+	.icon-rocket,
+	.icon-briefcase {
+		display: none;
+	}
+
+	.main {
+	    width: 100%;
+	}
+
+	.about__pic {
+		width: 140px;
+	}
+
+	.about__text {
+	    margin-top: 1px;
+	    height: auto;
+    	overflow: hidden;
+	}
+
+	.about__btns {
+	    margin-top: 30px;
+	    // margin-bottom: 30px;
+	}
+
+	.download-btn {
+	    margin-right: 1px;
+	}
+
+	.foot {
+		min-width: 95%;
+		height: 100px;
+		margin-top: -118px;
+	}
+
+	.creator {
+		line-height: 20px;
+		margin-bottom: 0;
+		padding-top: 15px;
+	}
+
+	.accounts {
+		height: 30px;
+		margin-top: 7px;
+	}
+}
+
+
+@media screen and (max-width: 330px) {
+	.nav__item {
+	    padding-right: 0;
+	    padding-left: 0;
+	    margin-right: 10px;
+
+	    &:last-child {
+	    	margin-right: 0px
+	    }
+	}
+}
+
+@media screen and (max-width: 240px) {
+	.header__left {
+		float: none;
+	}
+
+	.header__right {
+	    float: none;
+	    text-align: right;
+	}
+}
